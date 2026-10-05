@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "taro build --type h5 --watch",
     "build": "taro build --type h5",
-    "start": "taro build --type h5 --watch"
+    "start": "taro build --type h5 --watch",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.0",
     "@nutui/nutui-react-taro": "^3.0.17",
     "@reduxjs/toolkit": "^2.8.2",
     "@tarojs/components": "3.6.40",
@@ -17,7 +20,6 @@
     "@tarojs/react": "3.6.40",
     "@tarojs/runtime": "3.6.40",
     "@tarojs/taro": "3.6.40",
-    "@hookform/resolvers": "^5.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.62.0",
@@ -34,6 +36,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "babel-preset-taro": "3.6.40",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.2",
     "webpack": "5.91.0"
   }
